@@ -1,0 +1,280 @@
+*{
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+
+body{
+
+    overflow: hidden;
+}
+
+
+
+/* HEADER */
+
+header{
+
+    width: 100%;
+
+    padding: 25px 8%;
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    z-index: 1000;
+}
+
+
+
+/* LOGO */
+
+.logo{
+
+    color: #ffffff;
+
+    font-size: 32px;
+
+    font-family: 'Cormorant Garamond', serif;
+
+    letter-spacing: 2px;
+
+    font-weight: 700;
+
+    text-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+
+.logo i{
+
+    color: #d8a774;
+
+    margin-right: 10px;
+}
+
+
+
+
+/* ICONS */
+
+.icons a{
+
+    color: white;
+
+    font-size: 21px;
+
+    margin-left: 22px;
+
+    transition: 0.4s;
+}
+
+
+.icons a:hover{
+
+    color: #d8a774;
+
+    transform: translateY(-3px);
+}
+
+
+
+
+/* HOME */
+
+.home{
+
+    width: 100%;
+
+    height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+
+
+
+.home img{
+
+
+    width: 100%;
+
+    height: 100vh;
+
+    object-fit:cover;
+  
+}
+
+
+
+/* OVERLAY */
+
+.overlay{
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+display: none;
+   
+}
+
+
+
+
+/* CONTENT */
+
+.content{
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%,-50%);
+
+    text-align: center;
+}
+
+
+
+/* TITLE */
+
+.content h1{
+
+    color: white;
+
+    font-size: 115px;
+
+    font-family: 'Cormorant Garamond', serif;
+
+    letter-spacing: 6px;
+
+    font-weight: 700;
+
+    text-shadow: 0 10px 25px rgba(0,0,0,0.5);
+
+    margin-bottom: 35px;
+}
+
+
+
+
+/* BUTTON */
+
+.btn{
+
+    display: inline-block;
+
+    padding: 16px 50px;
+
+    background: #d8a774;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 20px;
+
+    border-radius: 50px;
+
+    font-family: 'Poppins', sans-serif;
+
+    letter-spacing: 1px;
+
+    transition: 0.4s;
+
+    box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+
+
+
+.btn:hover{
+
+    background: white;
+
+    color: #8b5a2b;
+
+    transform: scale(1.05);
+}
+/* VIDEO ANIMATION */
+
+.hero-img img{
+
+    transition: 0.5s ease;
+
+    cursor: pointer;
+}
+
+
+
+/* HOVER EFFECT */
+
+.hero-img img:hover{
+
+    transform: scale(1.05) rotate(-1deg);
+
+    box-shadow:
+    0 0 15px #c7a17a,
+    0 0 30px #d9b38c,
+    0 0 50px rgba(199,161,122,0.8);
+
+    filter: brightness(1.08);
+}
+
+
+
+/* LIGHT ANIMATION */
+
+.hero-img {
+
+    position: relative;
+}
+
+.hero-img::before{
+
+    content: "";
+
+    position: absolute;
+
+    top: -20%;
+    left: -60%;
+
+    width: 50%;
+    height: 140%;
+
+    background: rgba(255,255,255,0.25);
+
+    transform: rotate(25deg);
+
+    transition: 0.7s;
+
+    z-index: 3;
+}
+
+
+
+/* SHINE EFFECT */
+
+.hero-img:hover::before{
+
+    left: 130%;
+}
