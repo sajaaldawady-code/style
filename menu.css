@@ -651,3 +651,75 @@ footer p{
         transform: translateY(0) scale(1);
     }
 }
+/* CONTACT BAR */
+
+.contact-bar{
+    background: #2b1d15;
+    padding: 30px;
+    text-align: center;
+}
+
+.contact-bar h2{
+    color: #fff;
+    margin-bottom: 20px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.contact-links{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.contact-links a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s;
+}
+
+.contact-links a i{
+    margin-right: 8px;
+    font-size: 22px;
+}
+
+.contact-links a:hover{
+    color: #d4a373;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+.footer{
+    background: #3e2723;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-content h3{
+    margin: 0;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.footer-content p{
+    margin: 5px 0;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.footer .designer{
+    font-size: 13px;
+    opacity: 0.7;
+}
+.contact-bar{
+    margin-bottom: 0;
+    padding-bottom: 20px;
+}
+
+.footer{
+    margin-top: 0;
+}
